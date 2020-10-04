@@ -1,7 +1,7 @@
 object frmLazteste: TfrmLazteste
-  Left = 315
+  Left = 219
   Height = 484
-  Top = 141
+  Top = 142
   Width = 854
   Caption = 'Tests for TDLib API from Telegram'
   ClientHeight = 484
@@ -219,13 +219,5 @@ object frmLazteste: TfrmLazteste
     Caption = 'Send'
     OnClick = btnSendClick
     TabOrder = 14
-  end
-  object btnTestThread: TButton
-    Left = 451
-    Height = 25
-    Top = 191
-    Width = 75
-    Caption = 'Test Thread'
-    TabOrder = 15
   end
 end

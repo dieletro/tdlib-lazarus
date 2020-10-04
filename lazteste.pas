@@ -61,7 +61,6 @@ type
     btnExecute: TButton;
     btnInit: TButton;
     btnSend: TButton;
-    btnTestThread: TButton;
     btnStart: TButton;
     btnStop: TButton;
     btnLogVerbosy: TButton;
@@ -101,29 +100,9 @@ type
     procedure on_fatal_error_callback(error_message: MyPCharType = '');
   end;
 
-  //  fatal_error_callback_type = CFUNCTYPE(None, c_char_p)
-  //
-  //  td_set_log_fatal_error_callback = tdjson.td_set_log_fatal_error_callback
-  //  td_set_log_fatal_error_callback.restype = None
-  //  td_set_log_fatal_error_callback.argtypes = [fatal_error_callback_type]
-  //
-  //
-  //  # initialize TDLib log with desired parameters
-  //  def on_fatal_error_callback(error_message):
-  //      print('TDLib fatal error: ', error_message)
-  //
-  //c_on_fatal_error_callback = fatal_error_callback_type(on_fatal_error_callback)
-  //td_set_log_fatal_error_callback(c_on_fatal_error_callback)
-
   type
     //Internal delegate void Callback(IntPtr ptr);
     fatal_error_callback_type = procedure (error_message: MyPCharType);
-
-  //type
-    //c_on_fatal_error_callback = on_fatal_error_callback;
-    //td_set_log_fatal_error_callback(c_on_fatal_error_callback)
-
-
 
   //Defining DLL methods and functions
   function client_create: MyPVoid; stdcall; external 'tdjson-x64.dll' name 'td_json_client_create';
@@ -168,8 +147,6 @@ end;
 procedure TfrmLazteste.on_fatal_error_callback(error_message: MyPCharType);
 begin
   //  # initialize TDLib log with desired parameters
-  //  def on_fatal_error_callback(error_message):
-  //      print('TDLib fatal error: ', error_message)
   memReceiver.Lines.Add(error_message^);
 end;
 
@@ -362,8 +339,6 @@ var
   JSonAnsiStr: AnsiString;
   X: ISuperObject;
 begin
-  //set_log_fatal_error_callback(on_fatal_error_callback);
-
   //# setting TDLib log verbosity level to 1 (errors)
   X := SO;
   X.S['@type'] := 'setLogVerbosityLevel';

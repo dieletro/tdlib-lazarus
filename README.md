@@ -155,7 +155,7 @@ implementation
 
 { TfrmLazteste } 
 ```
-## Declare this functions and procedures:
+## Declare this functions:
 
 ```Pascal
   public

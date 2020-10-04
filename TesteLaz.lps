@@ -85,15 +85,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="LazTeste"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="540"/>
-        <CursorPos X="9" Y="554"/>
+        <TopLine Value="7"/>
+        <CursorPos X="15" Y="10"/>
         <UsageCount Value="113"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="HelperThread.pas"/>
-        <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="41"/>
         <CursorPos X="66" Y="52"/>

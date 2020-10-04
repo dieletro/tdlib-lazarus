@@ -1,7 +1,5 @@
 unit LazTeste;
 
-{.$mode Delphi}
-{.$modeswitch nestedprocvars}
 {$mode objfpc}
 {$H+}
 interface
@@ -9,9 +7,7 @@ interface
 uses
   Windows, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, ExtCtrls, SynEdit, Dynlibs
-  ,superobject
-  //,HelperThread //AnonymousThread
-  {,FileUtil}{System.JSON,}{TDLib,}{ DBXJSON};
+  ,superobject;
 
 type
   //Global Types Definitions

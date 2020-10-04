@@ -1,7 +1,7 @@
 object frmLazteste: TfrmLazteste
-  Left = 219
+  Left = 315
   Height = 484
-  Top = 142
+  Top = 141
   Width = 854
   Caption = 'Tests for TDLib API from Telegram'
   ClientHeight = 484
@@ -18,7 +18,6 @@ object frmLazteste: TfrmLazteste
     EchoMode = emPassword
     PasswordChar = '#'
     TabOrder = 0
-    Text = '1303269'
     TextHint = 'API ID'
   end
   object Label2: TLabel
@@ -55,7 +54,6 @@ object frmLazteste: TfrmLazteste
     EchoMode = emPassword
     PasswordChar = '#'
     TabOrder = 2
-    Text = '2e608983b702b9b676fb4d54d35b638e'
     TextHint = 'API HASH'
   end
   object Label4: TLabel
@@ -73,7 +71,6 @@ object frmLazteste: TfrmLazteste
     Top = 120
     Width = 344
     TabOrder = 3
-    Text = '+5521997196000'
     TextHint = 'PHONE NUMBER'
   end
   object shStatus: TShape

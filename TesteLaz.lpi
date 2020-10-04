@@ -148,7 +148,7 @@
         <PackageName Value="LCL"/>
       </Item2>
     </RequiredPackages>
-    <Units Count="8">
+    <Units Count="7">
       <Unit0>
         <Filename Value="TesteLaz.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -165,29 +165,25 @@
         <UnitName Value="LazTeste"/>
       </Unit1>
       <Unit2>
-        <Filename Value="HelperThread.pas"/>
+        <Filename Value="superdate.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit2>
       <Unit3>
-        <Filename Value="superdate.pas"/>
+        <Filename Value="superobject.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit3>
       <Unit4>
-        <Filename Value="superobject.pas"/>
+        <Filename Value="supertimezone.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit4>
       <Unit5>
-        <Filename Value="supertimezone.pas"/>
+        <Filename Value="supertypes.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit5>
       <Unit6>
-        <Filename Value="supertypes.pas"/>
-        <IsPartOfProject Value="True"/>
-      </Unit6>
-      <Unit7>
         <Filename Value="superxmlparser.pas"/>
         <IsPartOfProject Value="True"/>
-      </Unit7>
+      </Unit6>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

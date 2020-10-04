@@ -1,0 +1,234 @@
+object frmLazteste: TfrmLazteste
+  Left = 219
+  Height = 484
+  Top = 142
+  Width = 854
+  Caption = 'Tests for TDLib API from Telegram'
+  ClientHeight = 484
+  ClientWidth = 854
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+  object txtAPI_ID: TEdit
+    Left = 8
+    Height = 23
+    Hint = 'API ID'
+    Top = 24
+    Width = 344
+    EchoMode = emPassword
+    PasswordChar = '#'
+    TabOrder = 0
+    Text = '1303269'
+    TextHint = 'API ID'
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Hint = 'API ID'
+    Top = 8
+    Width = 32
+    Caption = 'API ID'
+    ParentColor = False
+  end
+  object memSend: TMemo
+    Left = 8
+    Height = 208
+    Top = 272
+    Width = 416
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Hint = 'API HASH'
+    Top = 56
+    Width = 53
+    Caption = 'API HASH'
+    ParentColor = False
+  end
+  object txtAPI_HASH: TEdit
+    Left = 8
+    Height = 23
+    Hint = 'API HASH'
+    Top = 72
+    Width = 344
+    EchoMode = emPassword
+    PasswordChar = '#'
+    TabOrder = 2
+    Text = '2e608983b702b9b676fb4d54d35b638e'
+    TextHint = 'API HASH'
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 15
+    Top = 104
+    Width = 91
+    Caption = 'PHONE NUMBER'
+    ParentColor = False
+  end
+  object txtPhoneNumber: TEdit
+    Left = 8
+    Height = 23
+    Hint = 'PHONE NUMBER'
+    Top = 120
+    Width = 344
+    TabOrder = 3
+    Text = '+5521997196000'
+    TextHint = 'PHONE NUMBER'
+  end
+  object shStatus: TShape
+    Left = 397
+    Height = 13
+    Top = 10
+    Width = 14
+    Brush.Color = clYellow
+    Pen.Style = psClear
+    Pen.Width = 0
+    Shape = stCircle
+  end
+  object lblNomeDLL: TLabel
+    Left = 413
+    Height = 15
+    Top = 8
+    Width = 20
+    Caption = 'DLL'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 360
+    Height = 15
+    Top = 8
+    Width = 32
+    Caption = 'Status'
+    ParentColor = False
+  end
+  object btnInit: TButton
+    Left = 536
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Init Dll'
+    OnClick = btnInitClick
+    TabOrder = 4
+  end
+  object Button9: TButton
+    Left = 617
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Stop Dll'
+    OnClick = Button9Click
+    TabOrder = 5
+  end
+  object btnCusca: TButton
+    Left = 698
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Find Dll'
+    OnClick = btnCuscaClick
+    TabOrder = 6
+  end
+  object memReceiver: TMemo
+    Left = 432
+    Height = 208
+    Top = 272
+    Width = 416
+    TabOrder = 7
+  end
+  object Label6: TLabel
+    Left = 8
+    Height = 24
+    Top = 240
+    Width = 62
+    Caption = 'Send...'
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 432
+    Height = 24
+    Top = 240
+    Width = 94
+    Caption = 'Receiver...'
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnLogVerbosy: TButton
+    Left = 8
+    Height = 25
+    Top = 160
+    Width = 101
+    Caption = 'log verbosity'
+    OnClick = btnLogVerbosyClick
+    TabOrder = 8
+  end
+  object btnCreateClient: TButton
+    Left = 115
+    Height = 25
+    Top = 160
+    Width = 85
+    Caption = 'Create Client'
+    OnClick = btnCreateClientClick
+    TabOrder = 9
+  end
+  object btnDestroyClient: TButton
+    Left = 115
+    Height = 25
+    Top = 191
+    Width = 85
+    Caption = 'Destroy Client'
+    OnClick = btnDestroyClientClick
+    TabOrder = 10
+  end
+  object btnExecute: TButton
+    Left = 208
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'Execute'
+    OnClick = btnExecuteClick
+    TabOrder = 11
+  end
+  object btnStart: TButton
+    Left = 289
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'Start Service'
+    OnClick = btnStartClick
+    TabOrder = 12
+  end
+  object btnStop: TButton
+    Left = 370
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'Stop Service'
+    OnClick = btnStopClick
+    TabOrder = 13
+  end
+  object btnSend: TButton
+    Left = 451
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'Send'
+    OnClick = btnSendClick
+    TabOrder = 14
+  end
+  object btnTestThread: TButton
+    Left = 451
+    Height = 25
+    Top = 191
+    Width = 75
+    Caption = 'Test Thread'
+    TabOrder = 15
+  end
+end

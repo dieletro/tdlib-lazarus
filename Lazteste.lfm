@@ -1,19 +1,19 @@
 object frmLazteste: TfrmLazteste
-  Left = 219
+  Left = 145
   Height = 484
-  Top = 142
-  Width = 854
-  Caption = 'Tests for TDLib API from Telegram'
+  Top = 158
+  Width = 1023
+  Caption = 'Tests for Telegram''s TDLib API on Lazarus 2.0.10'
   ClientHeight = 484
-  ClientWidth = 854
+  ClientWidth = 1023
   OnClose = FormClose
   OnCreate = FormCreate
   LCLVersion = '2.0.10.0'
   object txtAPI_ID: TEdit
-    Left = 8
+    Left = 128
     Height = 23
     Hint = 'API ID'
-    Top = 24
+    Top = 8
     Width = 344
     EchoMode = emPassword
     PasswordChar = '#'
@@ -21,10 +21,10 @@ object frmLazteste: TfrmLazteste
     TextHint = 'API ID'
   end
   object Label2: TLabel
-    Left = 8
+    Left = 88
     Height = 15
     Hint = 'API ID'
-    Top = 8
+    Top = 11
     Width = 32
     Caption = 'API ID'
     ParentColor = False
@@ -33,23 +33,24 @@ object frmLazteste: TfrmLazteste
     Left = 8
     Height = 208
     Top = 272
-    Width = 416
+    Width = 504
+    ScrollBars = ssVertical
     TabOrder = 1
   end
   object Label3: TLabel
-    Left = 8
+    Left = 67
     Height = 15
     Hint = 'API HASH'
-    Top = 56
+    Top = 44
     Width = 53
     Caption = 'API HASH'
     ParentColor = False
   end
   object txtAPI_HASH: TEdit
-    Left = 8
+    Left = 128
     Height = 23
     Hint = 'API HASH'
-    Top = 72
+    Top = 40
     Width = 344
     EchoMode = emPassword
     PasswordChar = '#'
@@ -57,24 +58,24 @@ object frmLazteste: TfrmLazteste
     TextHint = 'API HASH'
   end
   object Label4: TLabel
-    Left = 8
+    Left = 29
     Height = 15
-    Top = 104
+    Top = 76
     Width = 91
     Caption = 'PHONE NUMBER'
     ParentColor = False
   end
   object txtPhoneNumber: TEdit
-    Left = 8
+    Left = 128
     Height = 23
     Hint = 'PHONE NUMBER'
-    Top = 120
+    Top = 72
     Width = 344
     TabOrder = 3
     TextHint = 'PHONE NUMBER'
   end
   object shStatus: TShape
-    Left = 397
+    Left = 613
     Height = 13
     Top = 10
     Width = 14
@@ -84,7 +85,7 @@ object frmLazteste: TfrmLazteste
     Shape = stCircle
   end
   object lblNomeDLL: TLabel
-    Left = 413
+    Left = 629
     Height = 15
     Top = 8
     Width = 20
@@ -92,7 +93,7 @@ object frmLazteste: TfrmLazteste
     ParentColor = False
   end
   object Label5: TLabel
-    Left = 360
+    Left = 576
     Height = 15
     Top = 8
     Width = 32
@@ -100,7 +101,7 @@ object frmLazteste: TfrmLazteste
     ParentColor = False
   end
   object btnInit: TButton
-    Left = 536
+    Left = 776
     Height = 25
     Top = 8
     Width = 75
@@ -109,7 +110,7 @@ object frmLazteste: TfrmLazteste
     TabOrder = 4
   end
   object Button9: TButton
-    Left = 617
+    Left = 857
     Height = 25
     Top = 8
     Width = 75
@@ -118,7 +119,7 @@ object frmLazteste: TfrmLazteste
     TabOrder = 5
   end
   object btnCusca: TButton
-    Left = 698
+    Left = 938
     Height = 25
     Top = 8
     Width = 75
@@ -127,10 +128,11 @@ object frmLazteste: TfrmLazteste
     TabOrder = 6
   end
   object memReceiver: TMemo
-    Left = 432
+    Left = 520
     Height = 208
     Top = 272
-    Width = 416
+    Width = 493
+    ScrollBars = ssVertical
     TabOrder = 7
   end
   object Label6: TLabel
@@ -146,7 +148,7 @@ object frmLazteste: TfrmLazteste
     ParentFont = False
   end
   object Label7: TLabel
-    Left = 432
+    Left = 520
     Height = 24
     Top = 240
     Width = 94
@@ -160,7 +162,7 @@ object frmLazteste: TfrmLazteste
   object btnLogVerbosy: TButton
     Left = 8
     Height = 25
-    Top = 160
+    Top = 184
     Width = 101
     Caption = 'log verbosity'
     OnClick = btnLogVerbosyClick
@@ -169,7 +171,7 @@ object frmLazteste: TfrmLazteste
   object btnCreateClient: TButton
     Left = 115
     Height = 25
-    Top = 160
+    Top = 184
     Width = 85
     Caption = 'Create Client'
     OnClick = btnCreateClientClick
@@ -178,7 +180,7 @@ object frmLazteste: TfrmLazteste
   object btnDestroyClient: TButton
     Left = 115
     Height = 25
-    Top = 191
+    Top = 215
     Width = 85
     Caption = 'Destroy Client'
     OnClick = btnDestroyClientClick
@@ -187,16 +189,16 @@ object frmLazteste: TfrmLazteste
   object btnExecute: TButton
     Left = 208
     Height = 25
-    Top = 160
+    Top = 184
     Width = 75
     Caption = 'Execute'
     OnClick = btnExecuteClick
     TabOrder = 11
   end
   object btnStart: TButton
-    Left = 289
+    Left = 288
     Height = 25
-    Top = 160
+    Top = 184
     Width = 75
     Caption = 'Start Service'
     OnClick = btnStartClick
@@ -205,7 +207,7 @@ object frmLazteste: TfrmLazteste
   object btnStop: TButton
     Left = 370
     Height = 25
-    Top = 160
+    Top = 184
     Width = 75
     Caption = 'Stop Service'
     OnClick = btnStopClick
@@ -214,10 +216,80 @@ object frmLazteste: TfrmLazteste
   object btnSend: TButton
     Left = 451
     Height = 25
-    Top = 160
+    Top = 184
     Width = 75
     Caption = 'Send'
     OnClick = btnSendClick
     TabOrder = 14
+  end
+  object Label8: TLabel
+    Left = 29
+    Height = 15
+    Top = 108
+    Width = 93
+    Caption = 'CHAT ID TO SEND'
+    ParentColor = False
+  end
+  object txtChatIdToSend: TEdit
+    Left = 128
+    Height = 23
+    Hint = 'CHAT ID TO SEND'
+    Top = 104
+    Width = 344
+    TabOrder = 15
+    Text = '-1001387521713'
+    TextHint = 'CHAT ID TO SEND'
+  end
+  object memReceivedMessages: TMemo
+    Left = 576
+    Height = 148
+    Top = 76
+    Width = 437
+    Lines.Strings = (
+      'You can obtain a ChatID for testing using our Group that is already filled out or send a message, after '
+      'Starting the Service, using your smartphone to the contact you wish to use as a test, which will appear in '
+      'this memo the ChatID and UserID'
+    )
+    ScrollBars = ssVertical
+    TabOrder = 16
+  end
+  object Label9: TLabel
+    Left = 576
+    Height = 24
+    Top = 44
+    Width = 190
+    Caption = 'Received Messages...'
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 19
+    Height = 15
+    Top = 140
+    Width = 100
+    Caption = 'MESSAGE TO SEND'
+    ParentColor = False
+  end
+  object txtMsgToSend: TEdit
+    Left = 128
+    Height = 23
+    Hint = 'MESSAGE TO SEND'
+    Top = 136
+    Width = 344
+    TabOrder = 17
+    Text = 'Hello, this is a sample message from tdlib with Lazarus!!!!'
+    TextHint = 'MESSAGE TO SEND'
+  end
+  object btnSend1: TButton
+    Left = 480
+    Height = 25
+    Top = 134
+    Width = 88
+    Caption = 'Send Message'
+    OnClick = btnSend1Click
+    TabOrder = 18
   end
 end

@@ -102,7 +102,7 @@
           <Version Value="11"/>
           <PathDelim Value="\"/>
           <Target>
-            <Filename Value="TesteLaz"/>
+            <Filename Value="lib\$(TargetCPU)-$(TargetOS)\TesteLaz"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>

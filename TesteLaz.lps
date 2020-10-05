@@ -65,7 +65,7 @@
         <Item1 Mode="Win32" Option="362485138025"/>
       </SessionEnabledMatrixOptions>
     </BuildModes>
-    <Units Count="52">
+    <Units Count="54">
       <Unit0>
         <Filename Value="TesteLaz.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -73,8 +73,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="21" Y="3"/>
-        <UsageCount Value="113"/>
+        <CursorPos X="18" Y="7"/>
+        <UsageCount Value="131"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -85,9 +85,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="LazTeste"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos Y="3"/>
-        <FoldState Value=" TJq51}0#"/>
-        <UsageCount Value="113"/>
+        <TopLine Value="114"/>
+        <CursorPos X="28" Y="127"/>
+        <UsageCount Value="131"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -98,7 +98,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="46"/>
+        <UsageCount Value="64"/>
       </Unit2>
       <Unit3>
         <Filename Value="superobject.pas"/>
@@ -106,7 +106,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="559"/>
         <CursorPos X="14" Y="570"/>
-        <UsageCount Value="46"/>
+        <UsageCount Value="64"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
@@ -116,14 +116,14 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="46"/>
+        <UsageCount Value="64"/>
       </Unit4>
       <Unit5>
         <Filename Value="supertypes.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="3"/>
         <CursorPos X="3" Y="19"/>
-        <UsageCount Value="46"/>
+        <UsageCount Value="64"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
@@ -133,14 +133,14 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="46"/>
+        <UsageCount Value="64"/>
       </Unit6>
       <Unit7>
         <Filename Value="HelperThread.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="41"/>
         <CursorPos X="66" Y="52"/>
-        <UsageCount Value="48"/>
+        <UsageCount Value="46"/>
       </Unit7>
       <Unit8>
         <Filename Value="Win32\Debug\TDLib\TDLib.Api.pas"/>
@@ -148,14 +148,14 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="11"/>
       </Unit8>
       <Unit9>
         <Filename Value="Win32\Debug\TDLib\TDLib.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="29"/>
         <CursorPos X="18" Y="42"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="11"/>
       </Unit9>
       <Unit10>
         <Filename Value="Win32\Debug\TDLib\TMSCorLib.pas"/>
@@ -163,18 +163,18 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="11"/>
       </Unit10>
       <Unit11>
         <Filename Value="C:\lazarus208\lcl\forms.pp"/>
         <UnitName Value="Forms"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit11>
       <Unit12>
         <Filename Value="Lazteste.lfm"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="11"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit12>
       <Unit13>
@@ -183,13 +183,13 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="11"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit13>
       <Unit14>
         <Filename Value="testelaz.lfm"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="11"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit14>
       <Unit15>
@@ -197,7 +197,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="27"/>
         <CursorPos X="9" Y="39"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="6"/>
       </Unit15>
       <Unit16>
         <Filename Value="lib\x86_64-win64\TesteLaz.exe"/>
@@ -205,7 +205,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="11"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit16>
       <Unit17>
@@ -213,113 +213,113 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="2452"/>
         <CursorPos X="28" Y="2437"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit17>
       <Unit18>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\win\wininc\ascdef.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="58"/>
         <CursorPos X="42" Y="70"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit18>
       <Unit19>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\inc\dynlibs.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="30"/>
         <CursorPos X="58" Y="47"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit19>
       <Unit20>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\objpas\sysutils\intfh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit20>
       <Unit21>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\win\wininc\func.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="54"/>
         <CursorPos X="24" Y="61"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit21>
       <Unit22>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\win\wininc\base.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="151"/>
         <CursorPos X="16" Y="164"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit22>
       <Unit23>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\win64\windows.pp"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit23>
       <Unit24>
         <Filename Value="C:\lazarus208\lcl\stdctrls.pp"/>
         <UnitName Value="StdCtrls"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit24>
       <Unit25>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\win\sysutils.pp"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="4"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit25>
       <Unit26>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\packages\rtl-objpas\src\inc\variants.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="49"/>
         <CursorPos X="52" Y="5"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit26>
       <Unit27>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\objpas\classes\classesh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1660"/>
         <CursorPos X="72" Y="1668"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="6"/>
       </Unit27>
       <Unit28>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\inc\resh.inc"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="5"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit28>
       <Unit29>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\win\wininc\unifun.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="57"/>
         <CursorPos X="10" Y="69"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit29>
       <Unit30>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\inc\systemh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="387"/>
         <CursorPos X="3" Y="399"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="1"/>
       </Unit30>
       <Unit31>
         <Filename Value="C:\lazarus208\fpc\3.0.4\source\rtl\win\dynlibs.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="17"/>
         <CursorPos X="24" Y="32"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="31"/>
       </Unit31>
       <Unit32>
         <Filename Value="XSuperJSON.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="57"/>
         <CursorPos X="25" Y="64"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="22"/>
       </Unit32>
       <Unit33>
         <Filename Value="XSuperObject.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3008"/>
         <CursorPos X="24" Y="3012"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="22"/>
       </Unit33>
       <Unit34>
         <Filename Value="E:\01 - ComponentesLazarus\SuperObject\trunk\pltis_superobject.lpk"/>
@@ -327,58 +327,58 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="16"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit34>
       <Unit35>
         <Filename Value="..\..\..\..\..\..\API_WhatsApp\TInjectLaz\v1.0.0\trunk\Source\Model\uTInject.JS.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="364"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="6"/>
       </Unit35>
       <Unit36>
         <Filename Value="..\..\..\..\..\..\API_WhatsApp\TInjectLaz\v1.0.0\trunk\Source\Services\uTInject.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos X="23" Y="28"/>
-        <UsageCount Value="14"/>
+        <UsageCount Value="12"/>
       </Unit36>
       <Unit37>
         <Filename Value="C:\lazarus2010\fpc\3.2.0\source\packages\rtl-objpas\src\inc\rtti.pp"/>
         <UnitName Value="Rtti"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="6"/>
       </Unit37>
       <Unit38>
         <Filename Value="E:\01 - ComponentesLazarus\SuperObject\trunk\pltis_superobject.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="40" Y="17"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="16"/>
       </Unit38>
       <Unit39>
         <Filename Value="E:\01 - ComponentesLazarus\SuperObject\trunk\soclipbrd.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="11" Y="6"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="16"/>
       </Unit39>
       <Unit40>
         <Filename Value="E:\01 - ComponentesLazarus\SuperObject\trunk\sodbutils.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="108"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="16"/>
       </Unit40>
       <Unit41>
         <Filename Value="E:\01 - ComponentesLazarus\SuperObject\trunk\soutils.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="97"/>
         <CursorPos X="32" Y="106"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="16"/>
       </Unit41>
       <Unit42>
         <Filename Value="C:\lazarus2010\lcl\clipbrd.pp"/>
         <UnitName Value="Clipbrd"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="6"/>
       </Unit42>
       <Unit43>
         <Filename Value="E:\01 - ComponentesLazarus\SuperObject2\trunk\superdate.pas"/>
@@ -386,25 +386,25 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="16"/>
       </Unit43>
       <Unit44>
         <Filename Value="E:\01 - ComponentesLazarus\SuperObject2\trunk\superobject.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="565"/>
         <CursorPos X="15" Y="571"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="18"/>
       </Unit44>
       <Unit45>
         <Filename Value="E:\01 - ComponentesLazarus\SuperObject2\trunk\supertimezone.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="27" Y="88"/>
-        <UsageCount Value="19"/>
+        <UsageCount Value="17"/>
       </Unit45>
       <Unit46>
         <Filename Value="E:\01 - ComponentesLazarus\SuperObject2\trunk\supertypes.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="19"/>
+        <UsageCount Value="17"/>
       </Unit46>
       <Unit47>
         <Filename Value="E:\01 - ComponentesLazarus\SuperObject2\trunk\superxmlparser.pas"/>
@@ -412,157 +412,173 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="16"/>
       </Unit47>
       <Unit48>
         <Filename Value="C:\lazarus2010\fpc\3.2.0\source\packages\rtl-generics\src\generics.collections.pas"/>
         <UnitName Value="Generics.Collections"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="505"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="6"/>
       </Unit48>
       <Unit49>
         <Filename Value="C:\lazarus2010\fpc\3.2.0\source\rtl\inc\objpash.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="198"/>
         <CursorPos X="23" Y="206"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit49>
       <Unit50>
         <Filename Value="C:\lazarus2010\fpc\3.2.0\source\rtl\objpas\classes\classesh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1815"/>
         <CursorPos X="15" Y="1826"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit50>
       <Unit51>
         <Filename Value="C:\lazarus2010\lcl\include\control.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3544"/>
         <CursorPos X="24" Y="3554"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="11"/>
       </Unit51>
+      <Unit52>
+        <Filename Value="C:\lazarus2010\lcl\include\application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1268"/>
+        <CursorPos Y="1280"/>
+        <UsageCount Value="10"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="..\tdlib-lazarus.git\trunk\TesteLaz.lpi"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit53>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="139" Column="33" TopLine="128"/>
+        <Caret Line="415" Column="18" TopLine="404"/>
       </Position1>
       <Position2>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="137" Column="45" TopLine="127"/>
+        <Caret Line="102" Column="19" TopLine="90"/>
       </Position2>
       <Position3>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="384" Column="42" TopLine="380"/>
+        <Caret Line="14" Column="28"/>
       </Position3>
       <Position4>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="139" Column="10" TopLine="130"/>
+        <Caret Line="389" TopLine="386"/>
       </Position4>
       <Position5>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="385" Column="19" TopLine="373"/>
+        <Caret Line="388" TopLine="385"/>
       </Position5>
       <Position6>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="153" Column="34" TopLine="133"/>
+        <Caret Line="14" Column="44"/>
       </Position6>
       <Position7>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="385" Column="55" TopLine="373"/>
+        <Caret Line="363" Column="40" TopLine="350"/>
       </Position7>
       <Position8>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="126" Column="62" TopLine="106"/>
+        <Caret Line="98" Column="20" TopLine="87"/>
       </Position8>
       <Position9>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="388" Column="58" TopLine="373"/>
+        <Caret Line="137" Column="9" TopLine="130"/>
       </Position9>
       <Position10>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="16" Column="5" TopLine="4"/>
+        <Caret Line="138" Column="9" TopLine="131"/>
       </Position10>
       <Position11>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="371" Column="3" TopLine="369"/>
+        <Caret Line="137" Column="9" TopLine="130"/>
       </Position11>
       <Position12>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="263" Column="42" TopLine="242"/>
+        <Caret Line="577" Column="9" TopLine="546"/>
       </Position12>
       <Position13>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="271" TopLine="268"/>
+        <Caret Line="393" Column="27" TopLine="378"/>
       </Position13>
       <Position14>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="225" Column="38" TopLine="214"/>
+        <Caret Line="562" Column="23" TopLine="547"/>
       </Position14>
       <Position15>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="244" Column="3" TopLine="231"/>
+        <Caret Line="564" Column="28" TopLine="549"/>
       </Position15>
       <Position16>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="333" Column="44" TopLine="321"/>
+        <Caret Line="566" Column="33" TopLine="551"/>
       </Position16>
       <Position17>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="101" Column="20" TopLine="90"/>
+        <Caret Line="568" Column="33" TopLine="553"/>
       </Position17>
       <Position18>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="425" Column="17" TopLine="419"/>
+        <Caret Line="566" Column="27" TopLine="553"/>
       </Position18>
       <Position19>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="370" Column="3" TopLine="365"/>
+        <Caret Line="573" Column="27" TopLine="560"/>
       </Position19>
       <Position20>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="341" TopLine="333"/>
+        <Caret Line="619" Column="16" TopLine="607"/>
       </Position20>
       <Position21>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="293" Column="30" TopLine="283"/>
+        <Caret Line="266" Column="20" TopLine="254"/>
       </Position21>
       <Position22>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="326" Column="30" TopLine="314"/>
+        <Caret Line="607" Column="38" TopLine="596"/>
       </Position22>
       <Position23>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="387" Column="5" TopLine="378"/>
+        <Caret Line="608" Column="25" TopLine="599"/>
       </Position23>
       <Position24>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="213" Column="29" TopLine="203"/>
+        <Caret Line="271" Column="5" TopLine="251"/>
       </Position24>
       <Position25>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="101" Column="17" TopLine="92"/>
+        <Caret Line="261" Column="20" TopLine="250"/>
       </Position25>
       <Position26>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="415" Column="18" TopLine="404"/>
+        <Caret Line="269" Column="13" TopLine="260"/>
       </Position26>
       <Position27>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="102" Column="19" TopLine="90"/>
+        <Caret Line="267" Column="38" TopLine="238"/>
       </Position27>
       <Position28>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="14" Column="28"/>
+        <Caret Line="105" Column="18" TopLine="94"/>
       </Position28>
       <Position29>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="389" TopLine="386"/>
+        <Caret Line="486" Column="58" TopLine="467"/>
       </Position29>
       <Position30>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="388" TopLine="385"/>
+        <Caret Line="203" Column="26" TopLine="189"/>
       </Position30>
     </JumpHistory>
     <RunParams>

@@ -61,28 +61,36 @@ type
     btnExecute: TButton;
     btnInit: TButton;
     btnSend: TButton;
+    btnSend1: TButton;
     btnStart: TButton;
     btnStop: TButton;
     btnLogVerbosy: TButton;
     Button9: TButton;
+    Label10: TLabel;
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
     lblNomeDLL: TLabel;
     memReceiver: TMemo;
+    memReceivedMessages: TMemo;
     shStatus: TShape;
     txtAPI_ID: TEdit;
     txtAPI_HASH: TEdit;
+    txtMsgToSend: TEdit;
     txtPhoneNumber: TEdit;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
     memSend: TMemo;
+    txtChatIdToSend: TEdit;
     procedure btnCreateClientClick(Sender: TObject);
     procedure btnCuscaClick(Sender: TObject);
     procedure btnDestroyClientClick(Sender: TObject);
     procedure btnExecuteClick(Sender: TObject);
     procedure btnInitClick(Sender: TObject);
+    procedure btnSend1Click(Sender: TObject);
     procedure btnSendClick(Sender: TObject);
     procedure btnStartClick(Sender: TObject);
     procedure btnStopClick(Sender: TObject);
@@ -112,8 +120,6 @@ type
   function client_execute(handle: MyPVoid; data : MyPCharType): MyPCharType; stdcall; external 'tdjson-x64.dll' name 'td_json_client_execute';
   procedure set_log_verbosity_level(level: Int32); stdcall; external 'tdjson-x64.dll' name 'td_json_client_set_log_verbosity_level';
   procedure set_log_fatal_error_callback(callback : fatal_error_callback_type); stdcall; external 'tdjson-x64.dll' name 'td_json_client_set_log_fatal_error_callback';
-
-
 
 var
   frmLazteste: TfrmLazteste;
@@ -164,7 +170,7 @@ end;
 
 procedure TfrmLazteste.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
-  if (Pointer(FClient) <> Nil) or (IntPtr(FClient) <> 0) then
+  if FClient <> 0 then
    Begin
      client_destroy(FClient);
    End;
@@ -177,6 +183,36 @@ begin
     shStatus.Brush.Color := clGreen
   else
     shStatus.Brush.Color := clRed;
+end;
+
+procedure TfrmLazteste.btnSend1Click(Sender: TObject);
+var
+  X: ISuperObject;
+  JSonAnsiStr: AnsiString;
+begin
+  if is_closed = 1 then
+    Showmessage('No active service to send!')
+  Else
+  begin
+    //ChatID from the TInjectTelegram Group for you to use and test
+    //-1001387521713
+    X := SO;
+    X.S['@type'] := 'sendMessage';
+    X.S['chat_id'] := txtChatIdToSend.Text;
+    X.O['input_message_content'] := SO;
+    X.O['input_message_content'].S['@type'] := 'inputMessageText';
+    X.O['input_message_content'].O['text'] := SO;
+    X.O['input_message_content'].O['text'].S['@type'] := 'formattedText';
+    X.O['input_message_content'].O['text'].S['text'] := txtMsgToSend.Text;
+
+    JSonAnsiStr := X.AsJSon;
+
+    memSend.Lines.Add('SENDING : '+X.AsJSon);
+    memSend.Lines.Add('');
+
+    td_send(JSonAnsiStr);
+  end;
+
 end;
 
 procedure TfrmLazteste.btnSendClick(Sender: TObject);
@@ -214,7 +250,7 @@ procedure TfrmLazteste.btnStartClick(Sender: TObject);
 
 begin
 
-  if (Pointer(FClient) = Nil) or (IntPtr(FClient) = 0) then
+  if FClient = 0 then
   Begin
     Showmessage('Create a client to start the service');
   end
@@ -222,14 +258,14 @@ begin
   Begin
     is_Closed := 0;
 
-    if TThread.CreateAnonymousThread(TProcedure(@Receiver)).Finished then
+    //if TThread.CreateAnonymousThread(TProcedure(@Receiver)).Finished then
       with TThread.CreateAnonymousThread(TProcedure(@Receiver)) do
         begin
           FreeOnTerminate := True;
           Start;
-        end
-    Else
-      TThread.CreateAnonymousThread(TProcedure(@Receiver)).Terminate;
+        end;
+    //Else
+    //  TThread.CreateAnonymousThread(TProcedure(@Receiver)).Terminate;
 
 
     memSend.Lines.Add('Service Started!!!');
@@ -259,7 +295,7 @@ end;
 
 procedure TfrmLazteste.btnDestroyClientClick(Sender: TObject);
 begin
-  if (Pointer(FClient) <> Nil) or (IntPtr(FClient) <> 0) then
+  if FClient <> 0 then
   Begin
     if is_Closed = 0 then
     begin
@@ -271,11 +307,13 @@ begin
     client_session.ID := 0;
     client_session.Client := 0;
     client_destroy(FClient);
+    FClient := 0;
 
     with memSend.Lines do
     Begin
       Add('Name : '+client_session.Name);
       Add('ID : '+client_session.ID.ToString);
+      Add('Client : '+client_session.Client.ToString);
       Add('*******Section Finished********');
     end;
   End
@@ -310,7 +348,7 @@ end;
 procedure TfrmLazteste.btnCreateClientClick(Sender: TObject);
 begin
 
-  if (Pointer(FClient) = Nil) or (IntPtr(FClient) = 0) then
+  if FClient = 0 then
   Begin
     FClient := client_create;
 
@@ -387,7 +425,7 @@ end;
 function TfrmLazteste.td_receive: String;
 var
   ReturnStr, SDebug:  String;
-  X, XParam, TLAuthState, TLEvent: ISuperObject;
+  X, XParam, TLAuthState, TLEvent, TLUpdateMessage, TLContent, TLText: ISuperObject;
   JsonAnsiStr: AnsiString;
 begin
 {$REGION 'IMPLEMENTATION'}
@@ -520,7 +558,7 @@ begin
         JsonAnsiStr := '';
 
         //Convert String to AnsiString Type
-        JsonAnsiStr := InputBox('Autenticação de Usuário', 'Informe o código de acesso', '');
+        JsonAnsiStr := InputBox('User Authentication', 'Enter the access code', '');
 
         X := nil;
         X := SO;
@@ -544,6 +582,22 @@ begin
       Showmessage('An error was found:'+ #10#13 +
                   'code : ' + TLEvent.S['code'] + #10#13 +
                   'message : '+TLEvent.S['message']);
+    end;
+
+    //Handling New incoming messages
+    if TLEvent.S['@type'] = 'updateNewMessage' then
+    Begin
+      TLUpdateMessage := TLEvent.O['message'];
+      TLContent :=  TLUpdateMessage.O['content'];
+
+      //If it's a text message
+      if TLContent.S['@type'] = 'messageText' then
+      Begin
+        TLText := TLContent.O['text'];
+        memReceivedMessages.Lines.Add('ChatID : '+TLUpdateMessage.I['chat_id'].ToString+ ' - '+
+        'From UserId : '+TLUpdateMessage.I['sender_user_id'].ToString+' : '+TLText.S['text']);
+      End;
+
     end;
 
     //# handle an incoming update or an answer to a previously sent request

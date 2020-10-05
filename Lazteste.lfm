@@ -1,7 +1,7 @@
 object frmLazteste: TfrmLazteste
-  Left = 145
+  Left = 199
   Height = 484
-  Top = 158
+  Top = 145
   Width = 1023
   Caption = 'Tests for Telegram''s TDLib API on Lazarus 2.0.10'
   ClientHeight = 484

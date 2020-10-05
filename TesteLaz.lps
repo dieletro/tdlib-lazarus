@@ -74,7 +74,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
         <CursorPos X="18" Y="7"/>
-        <UsageCount Value="131"/>
+        <UsageCount Value="132"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -85,9 +85,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="LazTeste"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="114"/>
-        <CursorPos X="28" Y="127"/>
-        <UsageCount Value="131"/>
+        <TopLine Value="404"/>
+        <CursorPos X="46" Y="421"/>
+        <UsageCount Value="132"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -98,7 +98,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="64"/>
+        <UsageCount Value="65"/>
       </Unit2>
       <Unit3>
         <Filename Value="superobject.pas"/>
@@ -106,7 +106,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="559"/>
         <CursorPos X="14" Y="570"/>
-        <UsageCount Value="64"/>
+        <UsageCount Value="65"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
@@ -116,14 +116,14 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="64"/>
+        <UsageCount Value="65"/>
       </Unit4>
       <Unit5>
         <Filename Value="supertypes.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="3"/>
         <CursorPos X="3" Y="19"/>
-        <UsageCount Value="64"/>
+        <UsageCount Value="65"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
@@ -133,7 +133,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="64"/>
+        <UsageCount Value="65"/>
       </Unit6>
       <Unit7>
         <Filename Value="HelperThread.pas"/>
@@ -462,123 +462,123 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="415" Column="18" TopLine="404"/>
+        <Caret Line="388" TopLine="385"/>
       </Position1>
       <Position2>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="102" Column="19" TopLine="90"/>
+        <Caret Line="14" Column="44"/>
       </Position2>
       <Position3>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="14" Column="28"/>
+        <Caret Line="363" Column="40" TopLine="350"/>
       </Position3>
       <Position4>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="389" TopLine="386"/>
+        <Caret Line="98" Column="20" TopLine="87"/>
       </Position4>
       <Position5>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="388" TopLine="385"/>
+        <Caret Line="137" Column="9" TopLine="130"/>
       </Position5>
       <Position6>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="14" Column="44"/>
+        <Caret Line="138" Column="9" TopLine="131"/>
       </Position6>
       <Position7>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="363" Column="40" TopLine="350"/>
+        <Caret Line="137" Column="9" TopLine="130"/>
       </Position7>
       <Position8>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="98" Column="20" TopLine="87"/>
+        <Caret Line="577" Column="9" TopLine="546"/>
       </Position8>
       <Position9>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="137" Column="9" TopLine="130"/>
+        <Caret Line="393" Column="27" TopLine="378"/>
       </Position9>
       <Position10>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="138" Column="9" TopLine="131"/>
+        <Caret Line="562" Column="23" TopLine="547"/>
       </Position10>
       <Position11>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="137" Column="9" TopLine="130"/>
+        <Caret Line="564" Column="28" TopLine="549"/>
       </Position11>
       <Position12>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="577" Column="9" TopLine="546"/>
+        <Caret Line="566" Column="33" TopLine="551"/>
       </Position12>
       <Position13>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="393" Column="27" TopLine="378"/>
+        <Caret Line="568" Column="33" TopLine="553"/>
       </Position13>
       <Position14>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="562" Column="23" TopLine="547"/>
+        <Caret Line="566" Column="27" TopLine="553"/>
       </Position14>
       <Position15>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="564" Column="28" TopLine="549"/>
+        <Caret Line="573" Column="27" TopLine="560"/>
       </Position15>
       <Position16>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="566" Column="33" TopLine="551"/>
+        <Caret Line="619" Column="16" TopLine="607"/>
       </Position16>
       <Position17>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="568" Column="33" TopLine="553"/>
+        <Caret Line="266" Column="20" TopLine="254"/>
       </Position17>
       <Position18>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="566" Column="27" TopLine="553"/>
+        <Caret Line="607" Column="38" TopLine="596"/>
       </Position18>
       <Position19>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="573" Column="27" TopLine="560"/>
+        <Caret Line="608" Column="25" TopLine="599"/>
       </Position19>
       <Position20>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="619" Column="16" TopLine="607"/>
+        <Caret Line="271" Column="5" TopLine="251"/>
       </Position20>
       <Position21>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="266" Column="20" TopLine="254"/>
+        <Caret Line="261" Column="20" TopLine="250"/>
       </Position21>
       <Position22>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="607" Column="38" TopLine="596"/>
+        <Caret Line="269" Column="13" TopLine="260"/>
       </Position22>
       <Position23>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="608" Column="25" TopLine="599"/>
+        <Caret Line="267" Column="38" TopLine="238"/>
       </Position23>
       <Position24>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="271" Column="5" TopLine="251"/>
+        <Caret Line="105" Column="18" TopLine="94"/>
       </Position24>
       <Position25>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="261" Column="20" TopLine="250"/>
+        <Caret Line="486" Column="58" TopLine="467"/>
       </Position25>
       <Position26>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="269" Column="13" TopLine="260"/>
+        <Caret Line="203" Column="26" TopLine="189"/>
       </Position26>
       <Position27>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="267" Column="38" TopLine="238"/>
+        <Caret Line="125" Column="29" TopLine="108"/>
       </Position27>
       <Position28>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="105" Column="18" TopLine="94"/>
+        <Caret Line="400" Column="24" TopLine="394"/>
       </Position28>
       <Position29>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="486" Column="58" TopLine="467"/>
+        <Caret Line="106" Column="19" TopLine="96"/>
       </Position29>
       <Position30>
         <Filename Value="lazteste.pas"/>
-        <Caret Line="203" Column="26" TopLine="189"/>
+        <Caret Line="145" Column="27" TopLine="132"/>
       </Position30>
     </JumpHistory>
     <RunParams>

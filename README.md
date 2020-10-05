@@ -59,6 +59,7 @@ Deploy the library libtdjson.so to your device and set the library path calling 
 > - [X] Windows 64.
 > - [X] Windows 32.
 > - [X] Linux64.
+> - [X] OSX64.
 
 ## Creating your Telegram Application
 In order to obtain an API id and develop your own application using the Telegram API you need to do the following:
@@ -348,6 +349,22 @@ begin
                   'message : '+TLEvent.S['message']);
     end;
 
+    //Handling New incoming messages
+    if TLEvent.S['@type'] = 'updateNewMessage' then
+    Begin
+      TLUpdateMessage := TLEvent.O['message'];
+      TLContent :=  TLUpdateMessage.O['content'];
+
+      //If it's a text message
+      if TLContent.S['@type'] = 'messageText' then
+      Begin
+        TLText := TLContent.O['text'];
+        memReceivedMessages.Lines.Add('ChatID : '+TLUpdateMessage.I['chat_id'].ToString+ ' - '+
+        'From UserId : '+TLUpdateMessage.I['sender_user_id'].ToString+' : '+TLText.S['text']);
+      End;
+
+    end;  
+	
     //# handle an incoming update or an answer to a previously sent request
     if TLEvent.AsJSON() <> '' then
     Begin
@@ -517,6 +534,41 @@ begin
   end;
 end; 
 ```
+
+## SendMessage
+
+```Pascal
+procedure TfrmLazteste.btnSend1Click(Sender: TObject);
+var
+  X: ISuperObject;
+  JSonAnsiStr: AnsiString;
+begin
+  if is_closed = 1 then
+    Showmessage('No active service to send!')
+  Else
+  begin
+    //ChatID from the TInjectTelegram Group for you to use and test
+    //-1001387521713
+    X := SO;
+    X.S['@type'] := 'sendMessage';
+    X.S['chat_id'] := txtChatIdToSend.Text; //ChatID To Send Message Here...
+    X.O['input_message_content'] := SO;
+    X.O['input_message_content'].S['@type'] := 'inputMessageText';
+    X.O['input_message_content'].O['text'] := SO;
+    X.O['input_message_content'].O['text'].S['@type'] := 'formattedText';
+    X.O['input_message_content'].O['text'].S['text'] := txtMsgToSend.Text; //Your Message TExt here...
+
+    JSonAnsiStr := X.AsJSon;
+
+    memSend.Lines.Add('SENDING : '+X.AsJSon);
+    memSend.Lines.Add('');
+
+    td_send(JSonAnsiStr);
+  end;
+
+end;   
+```
+
 ---
 > **Ruan Diego Lacerda Menezes (dieletro).**
 1. Contatos

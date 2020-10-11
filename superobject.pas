@@ -554,6 +554,7 @@ type
     function AsDouble: Double;
     function AsCurrency: Currency;
     function AsString: SOString;
+    function AsAnsiString: AnsiString;
     function AsArray: TSuperArray;
     function AsObject: TSuperTableString;
 {$IFDEF SUPER_METHOD}
@@ -605,6 +606,8 @@ type
     procedure SetDataPtr(const Value: Pointer);
     property DataPtr: Pointer read GetDataPtr write SetDataPtr;
   end;
+
+  { TSuperObject }
 
   TSuperObject = class(TObject, ISuperObject)
   private
@@ -702,8 +705,10 @@ type
     function AsDouble: Double; virtual;
     function AsCurrency: Currency; virtual;
     function AsString: SOString; virtual;
+    function AsAnsiString: AnsiString; virtual;
     function AsArray: TSuperArray; virtual;
     function AsObject: TSuperTableString; virtual;
+
 {$IFDEF SUPER_METHOD}
     function AsMethod: TSuperMethod; virtual;
 {$ENDIF}
@@ -2038,7 +2043,7 @@ begin
   Result := AType = FDataType;
 end;
 
-function TSuperObject.AsBoolean: boolean;
+function TSuperObject.AsBoolean: Boolean;
 begin
   case FDataType of
     stBoolean: Result := FO.c_boolean;
@@ -2128,6 +2133,11 @@ begin
   end;
 end;
 
+function TSuperObject.AsAnsiString: AnsiString;
+begin
+  Result := Self.AsJSon;
+end;
+
 function TSuperObject.GetEnumerator: TSuperEnumerator;
 begin
   Result := TSuperEnumerator.Create(Self);
@@ -2158,7 +2168,7 @@ begin
     Result := nil;
 end;
 
-function TSuperObject.AsJSon(indent, escape: boolean): SOString;
+function TSuperObject.AsJSon(indent: boolean; escape: boolean): SOString;
 var
   pb: TSuperWriterString;
 begin
@@ -3300,7 +3310,7 @@ begin
   pb.Free;
 end;
 
-function TSuperObject.CalcSize(indent, escape: boolean): integer;
+function TSuperObject.CalcSize(indent: boolean; escape: boolean): integer;
 var
   pb: TSuperWriterFake;
 begin
